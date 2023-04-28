@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+	font-family: Fjalla One;
+}
+
+body {
+    border: 0;
+    margin: 0;
+    background-image: url(osh/fundoOff22.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.menuPR {
+    font-weight: bold;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #9694DE;
+	height: 80px; 
+	position: sticky;
+	top: 0;
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+li {
+	display: inline;
+}
+
+li a {
+	display: inline;
+	color: white;
+	text-decoration: underline;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: none;
+}
+
+li {
+	float: left;
+    color: white;
+}
+
+/* LOGO */
+.BE {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    margin: 0 18px 0 20px;
+}
+
+.textLG {
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    margin: 10px 18px 0 0;
+    text-decoration: none;
+}
+
+.img-paw {
+    width: 60px;
+    height: 60px;
+    margin: 10px 18px 0 0;
+}
+
+/* PERFIL */
+.droppu {
+    margin-top: 15px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.droppu {
+    position: relative;
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover .dropdownPU:hover .droppu {
+    background-color: #9794DE;
+}
+
+.droppu-content {
+    display: none;
+    position: fixed;
+    right: 5px;
+    top: 70px;
+    background-color: #CCCBFB;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.droppu-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.droppu-content a:hover {
+    background-color: #9694DE;
+}
+
+.dropdownPU:hover .droppu-content {
+    display: block;
+}
+
+.droppu {
+    transition-duration: 0.5s;
+}
+  
+.droppu:hover {
+    background-color: white;
+    color: #9794DE;
+}
+
+/* MENU */
+.dropme {
+    margin-top: 15px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.dropme {
+    position: relative;
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover .dropdownME:hover .dropme {
+    background-color: #9794DE;
+}
+
+.dropme-content {
+    display: none;
+    position: fixed;
+    top: 70px;
+    background-color: #CCCBFB;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropme-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropme-content a:hover {
+    background-color: #9694DE;
+}
+
+.dropdownME:hover .dropme-content {
+    display: block;
+}
+
+.dropme {
+    transition-duration: 0.5s;
+}
+  
+.dropme:hover {
+    background-color: white;
+    color: #9794DE;
+}
+
+/* PESQUISE */
+.search-box {
+    margin-top: 15px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    height: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.search-box {
+    transition-duration: 0.5s;
+}
+  
+.search-box:hover {
+    background-color: white;
+    color: #9694DE;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #9694DE;
+    font-size: 20px;
+    line-height: 40px;
+    width: 0;
+}
+
+.search-btn {
+    border-radius: 50%;
+}
+
+.search-box:hover > .search-txt {
+    width: 180px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+    color: #9694DE;
+}
+
+::placeholder {
+    color: #9694DE;
+}
+
+.img-lupa {
+    width: 25px;
+    height: 25px;
+}
+
+/* CONTATO */
+.central {
+    text-align: center;
+    font-size: 40px;
+}
+
+.caixa-contato1 {
+    background: white;
+    width: 1000px;
+    height: 200px;
+    margin-top: 40px;
+    border-radius: 20px;
+    border: 2px solid #CCCBFB;
+    align-items: center;
+    margin-left: 170px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 28px;
+    margin: 30px 0 10px 0;
+}
+
+.btns {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: white;
+    color: #9694DE;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid #CCCBFB;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 30px 10px 20px 10px;
+}
+
+button:hover {
+    background-color: #CCCBFB;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid #CCCBFB;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 30px 10px 20px 10px;
+}
+
+.contBTNS {
+    text-align: center;
+    color: #333333;
+    margin: 0;
+}
+
+.btn-wts {
+    align-items: center;
+    vertical-align: text-top;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.btn-tel {
+    align-items: center;
+    vertical-align: text-top;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.btn-mail {
+    align-items: center;
+    vertical-align: text-top;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.btns-RDS {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-insta {
+    width: 50px;
+    height: 50px;
+    color: #333333;
+    margin-right: 20px;
+}
+
+.btn-face {
+    width: 50px;
+    height: 50px;
+    color: #333333;
+    margin-right: 20px;
+}
+
+.btn-ttok {
+    width: 50px;
+    height: 50px;
+    color: #333333;
+    margin-right: 20px;
+}
+
+.btn-you {
+    width: 50px;
+    height: 50px;
+    color: #333333;
+    margin-right: 20px;
+}
+.btn-twi {
+    width: 50px;
+    height: 50px;
+    color: #333333;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #9694DE;
+    color: white;
+    padding: 40px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.rodapeLG {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .listRDP {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+footer .listRDP  {
+    color: white;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+footer .listRDP a:hover {
+    color: #3f3f75;
+}
+
+footer ul li a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.frasePROMO {
+    font-size: 16px;
+    text-align: center;
+}

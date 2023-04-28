@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+	font-family: Fjalla One;
+}
+
+body {
+    border: 0;
+    margin: 0;
+    background-image: url(osh/fundoOff22.png);
+    background-repeat: repeat-y;
+    transition: .2s linear;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+.menuPR {
+    font-weight: bold;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #9694DE;
+	height: 80px; 
+	position: sticky;
+	top: 0;
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+li {
+	display: inline;
+}
+
+li a {
+	display: inline;
+	color: white;
+	text-decoration: underline;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: none;
+}
+
+li {
+	float: left;
+    color: white;
+}
+
+/* LOGO */
+.BE {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    margin: 0 18px 0 20px;
+}
+
+.textLG {
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    margin: 10px 18px 0 0;
+    text-decoration: none;
+}
+
+.img-paw {
+    width: 60px;
+    height: 60px;
+    margin: 10px 18px 0 0;
+}
+
+/* PERFIL */
+.droppu {
+    margin-top: 15px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.droppu {
+    position: relative;
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover .dropdownPU:hover .droppu {
+    background-color: #9794DE;
+}
+
+.droppu-content {
+    display: none;
+    position: fixed;
+    right: 5px;
+    top: 70px;
+    background-color: #CCCBFB;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.droppu-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.droppu-content a:hover {
+    background-color: #9694DE;
+}
+
+.dropdownPU:hover .droppu-content {
+    display: block;
+}
+
+.droppu {
+    transition-duration: 0.5s;
+}
+  
+.droppu:hover {
+    background-color: white;
+    color: #9794DE;
+}
+
+/* MENU */
+.dropme {
+    margin-top: 15px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.dropme {
+    position: relative;
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover .dropdownME:hover .dropme {
+    background-color: #9794DE;
+}
+
+.dropme-content {
+    display: none;
+    position: absolute;
+    top: 70px;
+    background-color: #CCCBFB;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropme-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropme-content a:hover {
+    background-color: #9694DE;
+}
+
+.dropdownME:hover .dropme-content {
+    display: block;
+}
+
+.dropme {
+    transition-duration: 0.5s;
+}
+  
+.dropme:hover {
+    background-color: white;
+    color: #9794DE;
+}
+
+/* PESQUISE */
+.search-box {
+    margin-top: 15px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    height: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.search-box {
+    transition-duration: 0.5s;
+}
+  
+.search-box:hover {
+    background-color: white;
+    color: #9694DE;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #9694DE;
+    font-size: 20px;
+    line-height: 40px;
+    width: 0;
+}
+
+.search-btn {
+    border-radius: 50%;
+}
+
+.search-box:hover > .search-txt {
+    width: 180px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+    color: #9694DE;
+}
+
+::placeholder {
+    color: #9694DE;
+}
+
+.img-lupa {
+    width: 25px;
+    height: 25px;
+}
+
+/* FRASE INTRODUTÓRIA */
+.intro {
+    color: #333333;
+    text-align: center;
+    border-bottom: 2px solid #CCCBFB;
+    background: #ffffffb0;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    height: 28px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.coraçao {
+    width: 21px;
+    height: 21px;
+    vertical-align: middle;
+}
+
+/* CAIXA1 */
+.caixa1 {
+    height: 150px;
+    width: 1200px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.caixa1 {
+    margin-left: 80px;
+    margin-top: 20px;
+    border: 0;
+    padding: 0;
+}
+
+.img-adote {
+    border-radius: 20px;
+}
+
+/* VOLTAR-AO-TOPO */
+#voltar-topo {
+    text-decoration: none;
+    color: white;
+    background: #3f3f75;
+    padding: 10px;
+    position: fixed;
+    right: 6px;
+    bottom: 6px;
+    border-radius: 14px;
+}
+
+.arrow {
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+}
+
+/* RESUMO-LOJA */
+.caixa-PROD1 {
+    background: transparent;
+    width: 100%;
+    height: 440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.caixa-PROD1 a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333333;
+    margin-left: 60px;
+}
+
+h3 {
+    color: #3f3f75;
+    font-size: 28px;
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+h4 {
+    color: #333333;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+h5 {
+    color: #b4b4b4;
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+.caixa-PROD1 .produto .discount {
+    position: absolute;
+    padding: 8px;
+    font-size: 16px;
+    color: #3f3f75;
+    background: #CCCBFB;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.caixa-PROD1 .produto .heart {
+    position: absolute;
+    cursor: pointer;
+    color: rgb(150, 150, 150);
+    align-items: right;
+    margin-top: 16px;
+    margin-left: 150px;
+}
+
+.caixa-PROD1 .produto .heart:hover {
+    color: #3f3f75;
+}
+
+.icon-heart {
+    width: 28px;
+    height: 28px;
+}
+
+button {
+    margin-top: 10px;
+    outline: none;
+    cursor: pointer;
+    color: #333333;
+    background: #eeeeee;
+    border-radius: 10px;
+    border: 2px solid #CCCBFB;
+    padding: 4px;
+}
+
+button:hover {
+    background: #dfdfdf;
+}
+
+.produto {
+    background: white;
+    width: 200px;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid #CCCBFB;
+}
+
+.produto:hover {
+    border-radius: 20px;
+    border: 2px solid #9694DE;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.img-prod {
+    width: 180px;
+    height: 180px;
+    border-bottom: 2px solid #CCCBFB;
+    border-radius: 20px 20px 0 0;
+}
+
+/* RESUMO-BANHO */
+.tituloHDB {
+    text-align: center;
+}
+
+.hora-do-banho {
+    background: white;
+    border: 2px solid #CCCBFB;
+    border-radius: 20px;
+    width: 1000px;
+    height: 300px;
+    margin-left: 190px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+
+.hora-do-banho a {
+    text-decoration: none;
+}
+
+.img-hdb {
+    width: 340px;
+    height: 260px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.text-hdb {
+    font-size: 22px;
+    color: #333333;
+    margin-left: 20px;
+}
+
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.P1 {
+    margin-top: 40px;
+}
+
+a button .banhoBTN {
+    font-size: 24px;
+}
+
+.agendBTN a button {
+    outline: unset;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 190px;
+    width: 1006px;
+    cursor: pointer;
+    color: white;
+    font-size: 40px;
+    background: #9694DE;
+    border-radius: 20px;
+    border: 2px solid #9694DE;
+}
+
+/* VIDEO */
+.tituloIFRM {
+    text-align: center;
+    margin-top: 60px;
+}
+
+iframe {
+    width: 800px;
+    height: 400px;
+    border-radius: 20px;
+    margin-left: 300px;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #9694DE;
+    color: white;
+    padding: 40px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.rodapeLG {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .listRDP {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+footer .listRDP  {
+    color: white;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+footer .listRDP a:hover {
+    color: #3f3f75;
+}
+
+footer ul li a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.frasePROMO {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}

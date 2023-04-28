@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+     <head>
+         <link rel="stylesheet" href="agenda.css">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta charset="UTF-8">
+             <title>
+                 Agende um banho e tosa
+             </title>
+     </head>
+
+<body>
+
+     <main class="menuPR">
+         <ul> 
+
+             <li class="BE">
+                 <a href="index.html">
+                     <ion-icon  class="img-paw" name="paw-outline"></ion-icon>
+                     <a href="index.html" class="textLG">BEM-ESTAR</a>
+                 </a>
+             </li>
+
+             <li class="subBE"><a href="#"></a></li>
+
+             <li style="float:right" class="dropdownPU">
+                 <a href="javascript:void(0)" class="droppu">Perfil</a>
+                     <div class="droppu-content">
+                         <a href="cadastro.html">Cadastrar-se</a>
+                         <a href="login.html">Entrar</a>
+                     </div>
+             </li>
+
+             <li style="float:right" class="dropdownME">
+                 <a href="javascript:void(0)" class="dropme">Menu</a>
+                     <div class="dropme-content">
+                         <a href="index.html">Página inicial</a>
+                         <a href="loja.html">Loja</a>
+                         <a href="agenda.html">Banho e/ou tosa</a>
+                         <a href="sobre.html">Sobre nós</a>
+                         <a href="adoçao.html">Adote-nos aqui</a>
+                         <a href="equipe.html">Conheça nossa equipe</a>
+                         <a href="contato.html">Nossas redes sociais</a>
+                     </div>
+             </li>
+
+             <li style="float:right" class="Barra-de-pesquisa">
+                 <div class="search-box">
+                     <input type="text" class="search-txt" placeholder="Pesquise">
+                         <a href="#" class="search-btn">
+                             <ion-icon class="img-lupa" name="search-outline" alt="Lupa"></ion-icon>
+                         </a>
+                 </div>
+             </li>
+
+         </ul>
+     </main>
+
+     <h2 class="agendeaqui">AGENDAMENTO!</h2>
+
+     <section class="caixa-agenda" style="display: flex;">
+
+         <div class="perfilPET">
+
+             <h2 class="h2perfil">PERFIL DO PET:</h2>
+             
+             <br>
+                 <label for="myfile"><img class="img-ppu" src="osh/ppu.png"></label>
+                 <input type="file" id="myfile" name="myfile" accept="image/*">
+
+             <form class="form">
+
+                 <div class="nomePET"> 
+                     <input type="text" id="nome" name="nome" placeholder="Nome do seu pet" required>
+                 </div>
+
+                 <h4>Tipo de pet:</h4>
+                 <div class="tiposP">
+                     <input type="radio" id="cachorro" name="your-pet" value="cachorro">
+                     <label for="cachorro">Cachorro</label>
+
+                     <input type="radio" id="gato" name="your-pet" value="gato">
+                     <label for="gato">Gato</label>
+                     
+                     <input type="radio" id="coelho" name="your-pet" value="coelho">
+                     <label for="coelho">Coelho</label>
+
+                     <input type="radio" id="porquinho" name="your-pet" value="porquinho">
+                     <label for="porquinho">Porquinho da Índia</label>
+
+                     <input type="radio" id="outros" name="your-pet" value="outros">
+                     <label for="outros">Outro</label>
+                 </div>
+
+                 <h4>Sexo:</h4>
+                 <div class="sexos">
+                     <input type="radio" id="femea" name="sexo" value="femea">
+                     <label for="femea">Femêa</label>
+
+                     <input type="radio" id="macho" name="sexo" value="macho">
+                     <label for="macho">Macho</label>
+                 </div>
+
+                 <h4>Nascimento:</h4>
+                 <div class="data-nascimento">
+                    <input type="date" id="nascimento" name="nascimento">
+                 </div>
+                 <div class="naosei">
+                     <input type="checkbox" id="nsei" name="nsei" value="Naosei">
+                     <label for="nsei">Não sei.</label>
+                 </div>
+
+                 <h4>Peso (em kg):</h4>
+                 <div class="peso">
+                    <input type="number" id="pesokg" name="pesokg" min="1" max="99" required>
+                 </div>
+
+                 <h4>Castrado:</h4>
+                 <div class="simounao">
+                     <input type="radio" id="sim" name="simounao" value="SiM">
+                     <label for="sim">Sim</label>
+
+                     <input type="radio" id="nao" name="simounao" value="NaO">
+                     <label for="nao">Não</label>
+                 </div>
+
+                 <h4>Temperamento:</h4>
+                 <div class="tempBM">
+                     <select id="temperamento" name="tempboum" required>
+                         <option value="temp">Temperamento do pet</option>
+                         <option value="bravo">Bravo</option>
+                         <option value="manso">Manso</option>
+                     </select>
+                 </div>
+
+                 <h2>SELECIONE O SERVIÇO DESEJADO:</h2>
+                 <div class="servicos">
+                     <select id="tiposserv" name="SERVICOStip" required>
+                         <option value="selecione">Selecione</option>
+                         <option value="banho">Banho</option>
+                         <option value="bahidra">Banho e Hidratação</option>
+                         <option value="batosahi">Banho e Tosa Higiênica</option>
+                         <option value="batosama">Banho e Tosa Máquina</option>
+                         <option value="batosate">Banho e Tosa Tesoura</option>
+                         <option value="batosatri">Banho e Tosa Trimming</option>
+                     </select>
+                 </div>
+
+                 <h2>LOCAL:</h2>
+                 <div class="local">
+                     <select id="localagend" name="AGENDAlocal" required>
+                         <option value="localiza">Local</option>
+                         <option value="sp">São Paulo</option>
+                         <option value="rj">Rio de Janeiro</option>
+                         <option value="mg">Minas Gerais</option>
+                         <option value="ba">Bahia</option>
+                     </select>
+                 </div>
+
+                 <h2>DATA E HORA:</h2>
+                 <div class="dataehora">
+                     <input type="datetime-local" id="agenddata" name="agenddataeh" required>
+                 </div>
+
+                 <button type="submit">AGENDAR</button>
+
+             </form>
+
+         </div>
+
+     </section>
+
+     <footer class="rodape">
+
+         <p class="rodapeLG">BEM-ESTAR</p>
+
+         <div class="listRDP">
+             <ul>
+                 <li><a href="index.html">Página inicial</a></li>
+                 <li><a href="sobre.html">Sobre Nós</a></li>
+                 <li><a href="contato.html">Contato</a></li>
+             </ul>
+         </div>
+
+         <p class="frasePROMO">Transforme a vida do seu melhor amigo em uma obra-prima com os cuidados personalizados do nosso petshop.</p>
+
+     </footer>
+
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

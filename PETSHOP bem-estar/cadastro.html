@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+     <head>
+         <link rel="stylesheet" href="cadastro.css">
+         <link name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta charset="UTF-8">
+             <title>
+                 Cadastro
+             </title>
+     </head>
+
+<body>
+
+     <main class="menuPR">
+         <ul> 
+
+             <li class="BE">
+                 <a href="index.html">
+                     <ion-icon  class="img-paw" name="paw-outline"></ion-icon>
+                     <a href="index.html" class="textLG">BEM-ESTAR</a>
+                 </a>
+             </li>
+
+             <li class="subBE"><a href="#"></a></li>
+
+             <li style="float:right" class="dropdownPU">
+                 <a href="javascript:void(0)" class="droppu">Perfil</a>
+                     <div class="droppu-content">
+                         <a href="cadastro.html">Cadastrar-se</a>
+                         <a href="login.html">Entrar</a>
+                     </div>
+             </li>
+
+             <li style="float:right" class="dropdownME">
+                 <a href="javascript:void(0)" class="dropme">Menu</a>
+                     <div class="dropme-content">
+                         <a href="index.html">Página inicial</a>
+                         <a href="loja.html">Loja</a>
+                          <a href="agenda.html">Banho e/ou tosa</a>
+                         <a href="sobre.html">Sobre nós</a>
+                         <a href="adoçao.html">Adote-nos aqui</a>
+                         <a href="equipe.html">Conheça nossa equipe</a>
+                         <a href="contato.html">Nossas redes sociais</a>
+                     </div>
+             </li>
+
+             <li style="float:right" class="Barra-de-pesquisa">
+                 <div class="search-box">
+                     <input type="text" class="search-txt" placeholder="Pesquise">
+                         <a href="#" class="search-btn">
+                             <ion-icon class="img-lupa" name="search-outline" alt="Lupa"></ion-icon>
+                         </a>
+                 </div>
+             </li>
+
+         </ul>
+     </main>
+
+     <h2 class="cadastro">CRIAR UMA CONTA!</h2>
+     <p class="fraseCDT">Insira os dados abaixo para a conclusão do cadastro.</p>
+
+     <section class="caixa-cadastro" style="display: flex;">
+
+         <form>
+
+             <label for="fileLP"><img class="PROicon" src="osh/profileicon.svg"></label>
+             <input type="file" id="fileLP" name="fileLP" accept="image/*">
+
+             <br>
+             <input type="text" id="nome" name="nome" placeholder="Nome" required>
+
+             <br>
+             <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+             
+             <br>
+             <input type="email" id="email" name="email" placeholder="Email" required>
+
+             <br>
+             <input type="password" id="pwd" name="pwd" placeholder="Defina uma senha" required>
+
+             <br>
+             <button type="submit">CADASTRAR</button>
+
+         </form>
+
+     </section>
+
+     <footer class="rodape">
+
+         <p class="rodapeLG">BEM-ESTAR</p>
+
+         <div class="listRDP">
+             <ul>
+                 <li><a href="index.html">Página inicial</a></li>
+                 <li><a href="sobre.html">Sobre Nós</a></li>
+                 <li><a href="contato.html">Contato</a></li>
+             </ul>
+         </div>
+
+         <p class="frasePROMO">Transforme a vida do seu melhor amigo em uma obra-prima com os cuidados personalizados do nosso petshop.</p>
+ 
+     </footer>
+ 
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
